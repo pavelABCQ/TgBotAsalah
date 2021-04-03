@@ -5,8 +5,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
 import wiki
 
-with open("tokenbt.txt", "r") as ftb:
-    TOKEN = ftb.readline().strip()
+		    TOKEN = ftb.readline().strip()
 
 
 def build_menu(buttons, n_cols,
