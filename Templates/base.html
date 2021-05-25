@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DreamSim</title>
+    <style>
+    .navigation {
+    height: 40px;
+    background-color: #dfef11;
+    overflow: hidden;
+}
+.navigation a {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    decoration: none;
+    float: rigth;
+}
+
+.navigation a:hover {
+    font-size: 25px;
+    background-color: #965e00;
+}
+h1 {
+    font-size:88px;
+}
+.box {
+    border-radius: 20px;
+    shadow-box: 24 18px 40 20;
+    border: 10px solid grey;
+    width: 500px;
+    height: 500px;
+    background-color: lightgrey;
+    text-align: center;
+    margin: auto;
+    <!--отступы бокса со сторон вне-->
+}
+
+.box p {
+    text-align: top;
+    font-size:22px;
+}
+
+.box p input {
+        border-input: 30px;
+        border-radius: 30px;
+        border-color: #000;
+    }
+    </style>
+</head>
+<body>
+<div class = "navigation">
+    <a href = {{ url_for ("main") }}>Главная</a>
+    <a href= {{ url_for("contacts") }} >Контакты</a>
+    <a href={{ url_for("enter") }}>Вход</a>
+    <a href = {{ url_for ("registration") }}>Регистрация</a>
+
+</div>
+
+{% block content %}
+
+{% endblock %}
+</body>
+</html>
