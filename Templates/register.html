@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action = "" method="post">
+    {{form.hidden_tag()}}
+<div class = "box">
+    <p>Регистрация</p>
+    <p> {{ form.username.label() }} {{ form.username(placeholder = "Your username") }} </p>
+    <br>
+    <p> {{ form.password.label() }} {{ form.password(placeholder = "Your password") }} </p>
+    <p> {{ form.submit() }} </p>
+
+</div>
+</form>
+{% endblock %}
